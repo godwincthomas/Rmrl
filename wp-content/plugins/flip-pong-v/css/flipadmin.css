@@ -1,0 +1,27 @@
+.mceToolbar.mceLeft.mceFirst.mceLast > div {
+    display: none;
+}
+#content-add_media{
+	height: 18px;
+    padding: 3px;
+    width: 113px;
+	border: 1px solid #DFDFDF;
+	border-radius: 3px 3px 3px 3px;
+	font-size: 16px;
+	background-color: #F6F6F6;
+}
+#flipbookmb, #normal-sortables{
+	width: 300px;
+	display: inline-block;
+}
+
+#dbt_height{
+	margin-left: 5px;
+}
+
+#dbt_width{
+	margin-left: 10px;
+}
+#flippong_advices{
+	font-weight: bold;
+}

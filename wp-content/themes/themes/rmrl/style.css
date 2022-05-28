@@ -1,0 +1,900 @@
+@charset "utf-8";
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #555;
+	font-size:12px;
+	line-height:140%;
+	background-color:#d6d3cd;
+}
+
+ul, ol, dl {
+	padding-left: 80px;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding:5px 15px 0px 15px;
+}
+
+.divil {padding-left: 80px;
+	margin: 80px;}
+
+h1, h2, h3 {
+	text-transform:uppercase;
+}
+
+a img {
+	border: none;
+}
+
+img.alignright {float:right; margin:5px 5px 5px 15px;}
+
+img.alignleft {float:left; margin:5px 15px 5px 5px;}
+
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+a img.alignright {float:right; margin:5px 5px 5px 15px}
+
+a img.alignleft {float:left; margin:5px 15px 5px 5px}
+
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+a {
+	color: #444444;
+	text-decoration: underline;
+}
+
+a:hover {
+	color:#000;
+	text-decoration: none;
+}
+
+.header {
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/headerbg.jpg);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	height:140px;
+}
+
+.headerinner {
+	width:980px;
+	margin:0 auto;
+	padding-top:40px;
+	height:100px;
+}
+
+.logo {
+	display:block;
+	width:362px;
+	padding-top:44px;
+	height:0;
+	overflow:hidden;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/rmrl-logo.png);
+	background-position:0 -44px;
+	background-repeat:no-repeat;
+	margin-left:20px;
+}
+
+.logo:hover {
+	background-position:0 0;
+}
+
+.menubar {
+	background-color:#d6d3cd;
+	height:35px;
+	padding:0;
+	border-top:1px solid #eee;
+}
+
+.searchlink {
+	float:right;
+}
+
+.menuinner {
+	width:980px;
+	margin:0 auto;
+	padding:0;
+}
+
+.menuinner ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.menuinner ul li {
+	padding:0;
+	margin:0;
+	list-style:none;
+	float:left;
+}
+
+.menuinner ul li a, .searchlink ul li a {
+	color:#444444;
+	text-decoration:none;
+	font-size:12px;
+	font-family:'Helvetica Neue LT Std',Helvetica,Verdana;
+	line-height:35px;
+	padding:0 17px;
+}
+
+.menuinner ul li a:hover, .searchlink ul li a:hover {
+	color:#d47a21;
+}
+		
+form#searchform label {
+	display:none;
+}
+		
+form#searchform input#s {
+	height:14px;
+	line-height:14px;
+	border-style:none;
+	margin-top:8px;
+	width:199px;
+	padding:3px 15px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/searchbg.jpg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	outline:none;
+}
+
+form#searchform input#searchbutton {
+	margin-top:8px;
+}
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+
+li.bjqs-slide{display:none;position:absolute;}
+
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+
+ol.bjqs-markers{list-style:none;margin:0;padding:0;z-index:9999;}
+
+ol.bjqs-markers li{float:left;}
+
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+#banner {
+  height:484px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  background:#fff;
+}
+
+#banner ul.bjqs-controls {
+	list-style:none;
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:404px;
+	left:50%;
+	margin-left:330px;
+	width:60px;
+	z-index:9999;
+ }
+
+#banner ul.bjqs-controls li {
+	 list-style:none;
+	 padding:0;
+	 margin:0;
+	 float:right;
+ }
+
+#banner a.bjqs-prev{
+	width:30px;
+	height:0px;
+	padding-top:40px;
+	overflow:hidden;
+	display:block;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/sliderleftarrow.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+#banner a.bjqs-next{
+	width:30px;
+	height:0px;
+	padding-top:40px;
+	overflow:hidden;
+	display:block;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/sliderrightarrow.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+#banner a.bjqs-prev:hover, #banner a.bjqs-next:hover {
+	background-position:0 -40px;
+}
+
+ol.bjqs-markers{
+  position:absolute;
+  bottom:-50px;
+  display:none;
+}
+
+#banner ol.bjqs-markers li{
+  float:left;
+  margin:0 3px;
+}
+
+#banner ol.bjqs-markers li a{
+  display:block;
+  height:10px;
+  width:10px;
+  border:4px solid #fff;
+  overflow:hidden;
+  text-indent:-9999px;
+  background:#000;
+  border-radius:10px;
+  box-shadow:0 0 50px rgba(0,0,0,0.5);
+}
+
+#banner ol.bjqs-markers li.active-marker a{
+  background:#fd0100;
+}
+
+#banner #slide1 {
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/mainbannerbg.jpg);
+	background-position:left top;
+	background-repeat:repeat;
+}
+
+#banner #slide2, #banner #slide3, #banner #slide4{
+	background-color:#000;
+}
+
+#banner .content{
+	width: 100%;
+	height: 484px;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+#banner div.slidecenter {
+	width:570px;
+	height:260px;
+	margin:0 auto;
+	padding-top:224px;
+	padding-left:410px;
+}
+
+#banner #slide1 .slidecenter {
+	background-image:url(https://rmrl.in/wp-content/themes/rmrl/images/homebanner1.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+#banner #slide2 .slidecenter {
+	background-image:url(https://rmrl.in/wp-content/themes/rmrl/images/homebanner2.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+#banner #slide3 .slidecenter {
+	background-image:url(https://rmrl.in/wp-content/themes/rmrl/images/homebanner3.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+#banner #slide4 .slidecenter {
+	background-image:url(https://rmrl.in/wp-content/themes/rmrl/images/homebanner4.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+			
+#banner div.slideinner {
+	width:440px;
+	background-image:url(https://rmrl.in/wp-content/themes/rmrl/images/black-75.png);
+	background-position:0 0;
+	background-repeat:repeat;
+	padding:15px;
+	height:150px;
+}
+			
+#banner .slideinner h2 {
+	font-size:40px;
+	color:#D6D3CD;
+	line-height:25px;
+	padding:0;
+	margin:0;
+}
+
+#banner .slideinner p {
+	font-size:16px;
+	color:#D6D3CD;
+	line-height:18px;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+}
+	
+.container {
+	width: 100%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.slideshow-wrapper {
+	padding-left:15px;
+}
+
+.row1 {
+	padding-bottom:30px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/shadowbg-up.jpg);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+
+.row1inner {
+	width:980px;
+	margin:0 auto;
+}
+
+.sidebar1 {
+	float: left;
+	width: 324px;
+}
+
+a.button-large {
+	color:#fff;
+	text-decoration:none;
+	font-size:24px;
+	display:block;
+	width:294px;
+	height:40px;
+	padding-top:7px;
+	padding-bottom:7px;
+	margin:0 auto;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/button-large.png);
+	background-position:center 0;
+	background-repeat:no-repeat;
+	text-align:center;
+	line-height:40px;
+	font-weight:bold;
+}
+
+a.button-large:hover {
+	background-position:center -56px;
+	color:#222222;
+}
+.sidebar2 {
+	float: left;
+	width: 324px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-vert.jpg);
+	background-position:left top;
+	background-repeat:repeat-y;
+	padding-left:4px;
+}
+
+#services-slider ul.bjqs-controls, #services-slider-sidebar ul.bjqs-controls {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:70px;
+}
+
+#services-slider ul.bjqs-controls li, #services-slider-sidebar ul.bjqs-controls li {
+	 list-style:none;
+	 padding:0;
+	 margin:0;
+	 float:right;
+ }
+
+#services-slider a.bjqs-prev, #services-slider-sidebar a.bjqs-prev {
+	width:25px;
+	height:0px;
+	padding-top:25px;
+	overflow:hidden;
+	display:block;
+	background:url(https://rmrl.in/wp-content/themes/rmrl/images/smallsliderleftarrow.png) 0px 0px no-repeat; 
+	border:1px solid #D6D3CD; 
+	margin-left:15px;
+	cursor:pointer;
+}
+
+#services-slider a.bjqs-prev:hover, #services-slider-sidebar a.bjqs-prev:hover {border-left:1px solid #fff; border-top:1px solid #fff; border-right:1px solid #5e5e59; border-bottom:1px solid #5e5e59;}
+
+#services-slider a.bjqs-next, #services-slider-sidebar a.bjqs-next {
+	width:25px;
+	height:0px;
+	padding-top:25px;
+	overflow:hidden;
+	display:block;background:url(https://rmrl.in/wp-content/themes/rmrl/images/smallsliderrightarrow.png) 0px 0px no-repeat; 
+	border:1px solid #D6D3CD;
+	cursor:pointer;
+}
+
+#services-slider a.bjqs-next:hover, #services-slider-sidebar a.bjqs-next:hover {border-right:1px solid #fff; border-top:1px solid #fff; border-left:1px solid #5e5e59; border-bottom:1px solid #5e5e59;}
+
+.sidebar3 {
+	float: left;
+	width: 324px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-vert.jpg);
+	background-position:left top;
+	background-repeat:repeat-y;
+	padding-left:4px;
+}
+
+#testimonials-slider ul.bjqs-controls {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:70px;
+}
+
+#testimonials-slider ul.bjqs-controls li {
+	 list-style:none;
+	 padding:0;
+	 margin:0;
+	 float:right;
+}
+
+#testimonials-slider p {
+	line-height:140%;
+	padding:5px 15px 0px 15px;
+}
+
+#testimonials-slider a.bjqs-prev{
+	width:25px;
+	height:0px;
+	padding-top:25px;
+	overflow:hidden;
+	display:block;
+	background:url(https://www.rmrl.in/wp-content/themes/rmrl/images/smallsliderleftarrow.png) 0px 0px no-repeat; 
+	border:1px solid #D6D3CD; 
+	margin-left:15px;
+	cursor:pointer;
+}
+
+#testimonials-slider a.bjqs-prev:hover {border-left:1px solid #fff; border-top:1px solid #fff; border-right:1px solid #5e5e59; border-bottom:1px solid #5e5e59;}
+
+#testimonials-slider a.bjqs-next{
+	width:25px;
+	height:0px;
+	padding-top:25px;
+	overflow:hidden;
+	display:block;background:url(https://www.rmrl.in/wp-content/themes/rmrl/images/smallsliderrightarrow.png) 0px 0px no-repeat; 
+	border:1px solid #D6D3CD;
+	cursor:pointer;
+}
+
+#testimonials-slider a.bjqs-next:hover{border-right:1px solid #fff; border-top:1px solid #fff; border-left:1px solid #5e5e59; border-bottom:1px solid #5e5e59;}
+
+.container h2 {
+	font-size:20px;
+	color:#5e5e5a;
+}
+
+.row2 {
+	padding-bottom:30px;
+	border-bottom:1px solid #eee;
+}
+
+.row2inner {
+	width:980px;
+	margin:0 auto;
+}
+
+.sidebar4 {
+	float: left;
+	width:575px;
+}
+
+.sidebar4-inner1 {
+	width:200px;
+	float:left;
+	margin-left:15px;
+	height:180px;
+}
+
+.sidebar4-inner2 {
+	width:355px;
+	float:left;
+}
+
+.sidebar4 ul {
+	list-style:none;
+	padding:0 15px;
+	padding-left:60px;
+	margin:0;
+}
+
+.sidebar4 ul li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.tabledatesnav {
+	position:relative;
+	z-index:9999;
+}
+
+.tabledates {
+	position:relative;
+	z-index:1;
+	margin-top:-20px;
+}
+
+body.page .tabledates {
+	position:relative;
+	z-index:1;
+	margin-top:-25px;
+}
+
+.tabledates caption {
+	padding-top:5px;
+	padding-bottom:10px;
+	width:150px;
+	margin-left:25px;
+	margin-right:25px;
+	text-align:center;
+}
+
+.sidebar4-inner2 ul.ec3_events {
+	list-style:none; 
+	padding:0 15px;
+	margin:0;
+}
+
+.sidebar4-inner2 ul.ec3_events li {
+	list-style:none; 
+	padding:0 15px;
+	margin:0;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.sidebar4-inner2 ul.ec3_events li ul {
+	list-style:none; 
+	padding:0;
+	padding-top:5px; 
+	margin-top:5px;
+	border-top:1px solid #ddd;
+	margin:0;
+}
+
+.sidebar4-inner2 ul.ec3_events li ul li {
+	list-style:none; 
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-weight:normal;
+}
+
+.sidebar5 {
+	float: left;
+	width:400px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-vert.jpg);
+	background-position:left top;
+	background-repeat:repeat-y;
+	padding-left:4px;
+}
+
+.newsscroller {
+	width:800px;
+	margin:30px auto;
+	margin-bottom:5px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-horiz.jpg);
+	background-position:left top;
+	background-repeat:repeat-x;
+	padding-top:4px;
+	height:44px;
+}
+
+.newsscroller-inner {
+	width:800px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-horiz.jpg);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	padding-bottom:4px;
+	height:40px;
+}
+
+.marquee, .marquee0 {
+	height:35px;
+	line-height:35px;
+	width:700px;
+}
+
+.marquee p, .marquee0 p {
+	float:left;
+}
+
+.footer {
+	padding: 10px 0 50px 0;
+	background: #5e5e59;
+	clear:both;
+}
+
+.footerinner {
+	width:980px;
+	margin:0 auto;
+}
+
+.footerinner p {
+	color: #ddd;
+	font-size:11px;
+	text-align:center;
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.social {
+	position:fixed;
+	top:50%;
+	right:0;
+	width:33px;
+	border-top:1px solid #ddd;
+}
+
+.social a {
+	display:block;
+	width:33px;
+	height:0;
+	padding-top:34px;
+	overflow:hidden;
+	border-bottom:1px solid #ddd;
+}
+
+.social a.fblink {
+	background-image:url(images/fb-icon-02.jpg);
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+
+.social a.fblink:hover {
+	background-position:0 -34px;
+}
+
+/* STYLES SPECIFIC TO INNER PAGES GO HERE */
+
+body.page, body.search, body.single {
+	line-height:160%;
+}
+
+body.page p, body.page h4, body.page h3, body.page h2, body.page h1, body.search p, body.search h4, body.search h3, body.search h2, body.search h1, body.single p, body.single h4, body.single h3, body.single h2, body.single h1 {
+	margin:0;
+	padding:8px 15px;
+}
+
+
+body.page .menubar, body.search .menubar, body.single .menubar {
+	background-color:#d6d3cd;
+	height:35px;
+	border-top:1px solid #eee;
+	padding-bottom:10px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/shadowbg-down.jpg);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+
+body.page .contentcontainer, body.search .contentcontainer, body.single .contentcontainer {
+	float: left;
+	width: 620px;
+	background-image:none;
+	padding:0 15px;
+	padding-bottom:30px;
+}
+
+body.page.page-id-26 .contentcontainer, body.page.page-id-44 .contentcontainer {
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-vert.jpg);
+	background-position:right top;
+	background-repeat:repeat-y;
+}
+
+.contentcontainer ul {
+	margin:10px 0;
+	margin-left:40px;
+}
+
+body.page h1, body.search h1, body.single h1 {
+	font-size:20px;
+	line-height:22px;
+	padding:0px 15px;
+	color:#5e5e5a;
+}
+
+.innermenu {
+	margin-top:5px;
+	margin-bottom:70px;
+	height:15px;
+	width:550px;
+}
+
+.innermenu ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.innermenu ul li {
+	list-style:none;
+	margin:0;
+	padding:8px 0;
+	float:left;
+	line-height:11px;
+}
+
+.innermenu ul li a {
+	padding:0px 15px;
+	border-right:1px solid #666;
+	text-decoration:none;
+	color:#666;
+	text-transform:uppercase;
+}
+
+.innermenu ul li a:hover {
+	color:#d47a21;
+}
+
+.innermenu ul li.last-item a {
+	border-right-style:none;
+}
+
+.innermenu ul li.current_page_item {
+	font-weight:bold;
+}
+
+.innermenu ul li ul {
+	display:none;
+}
+
+.innermenu2 {
+	margin-top:5px;
+	margin-bottom:10px;
+	height:15px;
+}
+
+.innermenu2 ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.innermenu2 ul li {
+	list-style:none;
+	padding:2px 15px;
+	margin:0;
+	float:left;
+	border-right:1px solid #666;
+	line-height:11px;
+}
+
+.innermenu2 ul li.last-item {
+	border-right-style:none;
+}
+
+.innermenu2 ul li a {
+	text-decoration:none;
+	color:#666;
+	text-transform:uppercase;
+}
+
+.innermenu2 ul li a:hover {
+	color:#d47a21;
+}
+
+.innermenu2 ul li.current_page_item {
+	font-weight:bold;
+}
+
+.innermenu2 ul li ul {
+	display:none;
+}
+
+body.page .contentcontainer h2, body.search .contentcontainer h2, body.single .contentcontainer h2 {
+	font-weight:normal;
+	font-size:15px;
+}
+
+body.page .sidebar3, body.search .sidebar3, body.single .sidebar3 {
+	padding-left:0;
+	width:324px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-vert.jpg);
+	background-position:left top;
+	background-repeat:repeat-y;
+}
+
+body.page.page-id-26 .sidebar3, body.page.page-id-44 .sidebar3 {
+	background:none;
+}
+
+form#cntctfrm_contact_form {
+	padding:0 15px;
+}
+
+.sidebar-div {
+	width:284px;
+	margin-left:20px;
+	margin-right:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-horiz.jpg);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+
+body.page .sidebar-div h2, body.search .sidebar-div h2, body.single .sidebar-div h2 {
+	padding:5px 0;
+}
+
+body.page .sidebar-div p, body.search .sidebar-div p, body.single .sidebar-div p {
+	padding:3px 0;
+}
+
+.footer-sidebar-div {
+	width:284px;
+	margin-left:20px;
+	margin-right:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/border-horiz.jpg);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+
+body.search a.more-link {
+	display:none;
+}
+
+a#ec3_publish {
+	display:none;
+}
+
+a#ec3_prev {
+	display:block;
+	width:11px;
+	height:0;
+	padding-top:12px;
+	overflow:hidden;
+	background-image:url(images/calendarleftarrow.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	margin-left:4px;
+}
+
+a#ec3_next {
+	display:block;
+	width:11px;
+	height:0;
+	padding-top:12px;
+	overflow:hidden;
+	background-image:url(images/calendarrightarrow.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	margin-right:4px;
+}
+
+body.page .row2, body.search .row2, body.single .row2 {
+	padding-top:30px;
+	background-image:url(https://www.rmrl.in/wp-content/themes/rmrl/images/shadowbg-up.jpg);
+	background-position:left top;
+	background-repeat:repeat-x;
+}
+
+#images65w {
+	text-align:center;
+}

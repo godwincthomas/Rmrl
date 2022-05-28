@@ -1,0 +1,142 @@
+/*
+Name: Nice Login and Signup Panel using Mootools 1.2
+Tutorial URI: http://web-kreation.com/demos/login_form_mootools_1.2/
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: August 2008
+
+	The CSS, XHTML and design is released under Creative Common License 2.5:
+	http://creativecommons.org/licenses/by-sa/2.5/
+
+*/
+
+/* Login Panel */
+#top {
+  	background: url(images/login_top1.png) repeat-x 0 0;
+	background-color:#f6f6f6;
+	height: 20px;
+	position: relative;
+}
+
+#top ul.login {
+	width:980px;
+	margin:0 auto;
+  	font-weight: bold;
+	text-align: right;
+	list-style:none;
+	padding-right:35px;
+}
+
+#top ul.login li {
+ 	text-align: right;
+  	padding: 0 6px;
+	margin-right:50px;
+	list-style:none;
+}
+
+#top ul.login li a {
+	color: #ff0000;
+	background-image:url(images/menubghover2.png);
+	background-position:left center;
+	background-repeat:repeat-x;
+	height:20px;
+	line-height:20px;
+}
+
+#top ul.login li a:hover {
+	color: #ffffff;
+	background-image:url(images/menubghover2.png);
+	background-position:left center;
+	background-repeat:repeat-x;
+	height:20px;
+	line-height:20px;
+}
+
+/*Login*/
+/* toggle effect - show/hide login*/
+#login {
+	width: 100%;
+	color: white;
+	background: #43839c;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	height: 0;
+}
+
+#login a {
+	text-decoration: none;
+	color: #33CCCC;
+}
+
+#login a:hover {
+	color: white;
+}
+
+#login .loginContent {
+	width: 980px;
+	height: 100px;
+	margin: 0 auto;
+	padding-top: 5px;
+	text-align: left;
+	font-size: 0.85em;
+	line-height:18px;
+}
+
+#login .loginContent .left {
+	width: 120px;
+	float: left;
+	padding-left: 65px;
+	font-size: 0.95em;
+}
+
+#login .loginContent .right {
+	width: 290px;
+	float: right;
+	text-align: right;
+	padding-right: 65px;
+	font-size: 0.95em;
+}
+
+#login .loginContent form {
+	margin: 0 0 10px 0;
+	height: 26px;
+}
+
+#login .loginContent input.field {
+	border: 1px #1A1A1A solid;
+	background: #464646;
+	margin-right: 5px;
+	margin-top: 4px;
+	color: white;
+	height: 16px;
+}
+
+#login .loginContent input:focus.field {
+	background: #545454;
+}
+
+#login .loginContent input.rememberme {
+	border: none;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+#login .loginContent input.button_login {
+	width: 47px;
+	height: 20px;
+	cursor: pointer;
+	border: none;
+	background: transparent url(images/button_login.jpg) no-repeat 0 0;
+}
+
+#login .loginClose {
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 80px;
+	width: 70px;
+	font-size: 0.8em;
+	text-align: left;
+}

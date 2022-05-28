@@ -1,0 +1,28 @@
+#flipbook{
+	    margin: auto;
+	    -moz-transition:0.3s left;
+	    -webkit-transition:0.3s left;
+	    transition:0.3s left;	
+}
+#flipbook .page{
+	    /*width:567px;*/
+	    /*height:567px;*/
+	    background-color:#ccc;
+	    overflow:hidden;
+	}
+.page img{
+	    display:block;
+	}
+	 
+#flipbuttons{
+	margin:auto;
+	width:188px;
+	padding-left: 18px;
+}
+#flipbuttons > a > img{
+	border:0;
+}
+.flipbookimg {
+    border: 0 none;
+	margin: 0 !important;
+}
